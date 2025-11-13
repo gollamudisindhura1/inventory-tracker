@@ -1,0 +1,14 @@
+{
+  "name": "inventory-tracker",
+  "version": "1.0.0",
+  "description": "OOP TypeScript Inventory System",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "tsc src/main.ts && node src/main.js",
+    "clean": "rm src/**/*.js",
+    "dev": "tsc src/main.ts && node src/main.js"
+  },
+  "keywords": ["typescript", "oop", "inventory"],
+  "author": "",
+  "license": "MIT"
+}
