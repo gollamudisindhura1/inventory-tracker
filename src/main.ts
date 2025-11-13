@@ -10,6 +10,7 @@ const inventory = [
 
 console.log('INVENTORY TRACKER');
 
+
 inventory.forEach((p, i) => {
   console.log(`${i + 1}. ${p.name} (${p.sku})`);
   console.log(`   Base: $${p.price.toFixed(2)}`);

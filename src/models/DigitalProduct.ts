@@ -9,7 +9,7 @@ export class DigitalProduct extends Product {
   ) {
     super(sku, name, price);
   }
-
+  
   // 0% tax for digital items
   getPriceWithTax(): number {
     return this.price;

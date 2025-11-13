@@ -8,7 +8,14 @@
     "clean": "rm src/**/*.js",
     "dev": "tsc src/main.ts && node src/main.js"
   },
-  "keywords": ["typescript", "oop", "inventory"],
+  "keywords": [
+    "typescript",
+    "oop",
+    "inventory"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }

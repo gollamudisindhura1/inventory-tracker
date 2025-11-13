@@ -10,6 +10,7 @@ export class PhysicalProduct extends Product {
     super(sku, name, price);
   }
 
+
   // 10% tax for physical items
   getPriceWithTax(): number {
     return this.price * 1.10;
