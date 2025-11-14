@@ -35,6 +35,11 @@ var PhysicalProduct = /** @class */ (function (_super) {
         enumerable: false,
         configurable: true
     });
+    PhysicalProduct.prototype.applyDiscount = function (percentage) {
+        if (percentage < 0 || percentage > 100)
+            return;
+        this.price = this.price * (1 - percentage / 100);
+    };
     return PhysicalProduct;
 }(Product_1.Product));
 exports.PhysicalProduct = PhysicalProduct;

@@ -19,4 +19,10 @@ export class PhysicalProduct extends Product {
   get weight(): string {
     return `${this._weight} kg`;
   }
+
+applyDiscount(percentage: number): void{
+  if (percentage <0 || percentage>100)
+    return;
+  this.price = this.price * (1-percentage/100);
+}
 }

@@ -35,6 +35,11 @@ var DigitalProduct = /** @class */ (function (_super) {
         enumerable: false,
         configurable: true
     });
+    DigitalProduct.prototype.applyDiscount = function (percentage) {
+        if (percentage < 0 || percentage > 100)
+            return;
+        this.price = this.price * (1 - percentage / 100);
+    };
     return DigitalProduct;
 }(Product_1.Product));
 exports.DigitalProduct = DigitalProduct;

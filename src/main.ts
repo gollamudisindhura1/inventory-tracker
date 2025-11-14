@@ -15,7 +15,11 @@ inventory.forEach((p, i) => {
   console.log(`${i + 1}. ${p.name} (${p.sku})`);
   console.log(`   Base: $${p.price.toFixed(2)}`);
   console.log(`   Final: $${p.getPriceWithTax().toFixed(2)}`);
+  
 
+  const originalPrice = p.price;
+  p.applyDiscount(15);
+  console.log(`   After 15 % OFF: $${p.price.toFixed(2)}`);
   if ('weight' in p) {
     console.log(`   Weight: ${(p as PhysicalProduct).weight}`);
   } else {

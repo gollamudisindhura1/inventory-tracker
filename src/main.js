@@ -13,6 +13,9 @@ inventory.forEach(function (p, i) {
     console.log("".concat(i + 1, ". ").concat(p.name, " (").concat(p.sku, ")"));
     console.log("   Base: $".concat(p.price.toFixed(2)));
     console.log("   Final: $".concat(p.getPriceWithTax().toFixed(2)));
+    var originalPrice = p.price;
+    p.applyDiscount(15);
+    console.log("   After 15 % OFF: $".concat(p.price.toFixed(2)));
     if ('weight' in p) {
         console.log("   Weight: ".concat(p.weight));
     }
